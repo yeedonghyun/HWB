@@ -42,7 +42,7 @@ void AMultiPlayerController::PossessPawn()
         AC_CH_CarBase* Player1View = Cast<AC_CH_CarBase>(FoundPawns[0]);
         Player1View->GetMesh()->SetSkeletalMesh(player1->MeshManager.GetCharactersMesh(player1->meshindex, true));
     }
-    
+
 
     FoundPawns.Empty();
     UGameplayStatics::GetAllActorsWithTag(GetWorld(), FName("Player2Tag"), FoundPawns);
@@ -92,7 +92,7 @@ void AMultiPlayerController::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
-    if ((!bPlayer1GameOver && !bPlayer2GameOver) && (!player1->bFalled && player2->bFalled) || (player1->bFalled && !player2->bFalled) )
+    if ((!bPlayer1GameOver && !bPlayer2GameOver) && (!player1->bFalled && player2->bFalled) || (player1->bFalled && !player2->bFalled))
     {
         bPlayer1GameOver = player1->bFalled;
         bPlayer2GameOver = player2->bFalled;

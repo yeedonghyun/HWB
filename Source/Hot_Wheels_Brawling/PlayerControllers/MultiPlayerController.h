@@ -10,7 +10,7 @@
 UCLASS()
 class HOT_WHEELS_BRAWLING_API AMultiPlayerController : public APlayerController
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 protected:
     void BeginPlay();
