@@ -86,7 +86,7 @@ void UWaitingRoomWidget::PlayClicked()
 				{
 
 					UGameplayStatics::OpenLevel(this, FName("SecondPlay"));
-				}, 3.0f, false);
+				}, 3.5f, false);
 		}
 	}
 }
